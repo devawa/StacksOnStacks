@@ -41,10 +41,10 @@ void loop() {
   Serial.println("Please enter your username or ID: ");
 
   //wait for user input
-  while (Serial.available() == 0);
+  while (BLESerial.available() == 0);
 
   //read input
-  String id = Serial.readString();
+  String id = BLESerial.readString();
   id.trim(); //get rid of return character at the end
 
   for (int i = 0; i < 5; i++){
@@ -77,19 +77,23 @@ void loop() {
     Serial.println("invalid username");
     digitalWrite(green, LOW);
     digitalWrite(red, HIGH);
-    delay(500);
+    delay(200);
     digitalWrite(red, LOW);
-    delay(500);
+    delay(200);
     digitalWrite(red, HIGH);
-    delay(500);
+    delay(200);
     digitalWrite(red, LOW);
-    delay(500);
+    delay(200);
+    digitalWrite(red, HIGH);
+    delay(200);
+    digitalWrite(red, LOW);
+    delay(200);
     digitalWrite(red, HIGH);
   }
   
 }
 
+// This function is going to send notification to the user
 void sendNotification(String val){
   
 }
-
