@@ -1,0 +1,134 @@
+\documentclass[english]{article}
+
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{babel}
+
+\author{
+	Abhinav Thakur\\
+	\texttt{13286383}
+	\and
+	Akua Afrane-Okese\\
+	\texttt{15019773}
+	\and
+	Brian Kamau Ndung’u\\
+	\texttt{15322913}
+	\and
+	Linda Zwane\\
+	\texttt{14199468}
+	\and
+	Ntiko Mathaba\\
+	\texttt{14012503}
+	\and
+	Tyler Matthews\\
+	\texttt{15302424}
+}	
+
+\title{Stacks on Stacks: Software Requirements\\
+	 Specification for Arivl\\
+	}
+\date{\today}
+\graphicspath{{Pictures/}}
+
+\begin{document}
+	\maketitle
+	\begin{figure}[!t]
+		\includegraphics{UP_logo.png}
+	\end{figure}
+	\pagenumbering{gobble}
+	\newpage
+
+	\tableofcontents
+	\newpage
+
+	\pagenumbering{arabic}
+	
+
+	\section{Introduction}
+		\paragraph\indent
+			
+
+		\subsection{Purpose}
+			\paragraph\indent
+ The aim of the project is to reach a stage whereby users have the option of using Arivl completely seamlessly, without having to open the application.
+
+		\subsection{Scope}
+			\paragraph\indent
+				Product Name: Arivl
+The aim of the project is to reach a stage whereby users have the option of using Arivl completely seamlessly, without having to open the application. Arivl will allow a boom to be opened when a user within range and has been verified, without the actual user having to do much to support this feature, giving about minimal user interaction having taken all security measures to enforce a safe and secure seamless action.
+
+
+		\subsection{Definition, Acronyms, and Abbreviations}
+			\paragraph\indent
+User - The person using the Arivl application.
+API - Application Programming Interface
+BLE - Bluetooth Low Energy
+
+
+		\subsection{References}
+			\paragraph\indent
+Arivl. [n.d.]. [Online]. Available: https://www.arivlapp.com/ [Accessed 13 March 2018].
+
+Argenox. [n.d.]. A BLE Advertising Primer. [Online]. Available: http://www.argenox.com/a-ble-advertising-primer/ (Accessed 2 March 2018).
+
+Avigezer, S. 2017. How To Use Android BLE to Communicate with Bluetooth Devices - An Overview \& Code examples. [Online]. Available: https://medium.com/@avigezerit/bluetooth-low-energy-on-android-22bc7310387a (Accessed 2 March 2018).
+
+Roberts, S. 2015. [Online]. Available: https://www.shoppertrak.com/article/what-is-bluetooth-low-energy-ble-bluetooth-smart/ (Accessed 27 February 2018).
+
+Townsend, K. [n.d.]. Introduction to Bluetooth Low Energy. [Online]. Available: https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gap (Accessed 2 March 2018).
+
+Warne, W. 2017. Bluetooth Low Energy - It starts with Advertising. [Online]. Available: http://blog.bluetooth.com/bluetooth-low-energy-it-starts-with-advertising (Accessed 2 March 2018).
+
+		\subsection{Overview}
+			\paragraph\indent
+The SRS shows the functional requirements of the system.
+
+	\section{Overall Description}
+		\paragraph\indent
+What Arivl (ArivlApp) entails is the ability to open homes, malls, and work with the swipe on a phone using Bluetooth.  Once Bluetooth is activated, your Arivl device will search for the closest boom. On the boom is an ArivlBox and when the phone connects to the box, then the user has to swipe the phone.
+Arivl aims to take away the phone interaction. It will also be able to address building management (such as lights, switches, Air Cons, others as specified, when a person walks past certain areas). 
+
+\subsection{Product Perspective}
+			\paragraph\indent
+The SRS shows the functional requirements of the system.
+
+\subsection{Product Functions}
+			\paragraph\indent
+R1.​ User must have the Arivl application installed on their phone.\\
+R1.1 User must login into the Arivl application.\\
+R1.2​ User must be running Arivl application on their phone in the foreground.\\
+
+R2.​ Arivl application must open a boom gate.\\
+R2.1​ User must be registered to system for access to users in front of boom gate.\\
+R2.2​ Arivl application must connect to Arivl Box and send a signal to request for boom gate to open.\\
+
+R3.​ Arivl application user must connect to Arivl box through BLE.\\
+
+R4.​ Communication between central and peripheral must be encrypted.\\	
+
+\subsection{User Characteristics}
+			\paragraph\indent
+The users are people who either have access or do not have access to a particular boom gate(s) in a residential estate(s) and/ or corporate offices park(s). These users should have a basic understanding of how to install and use applications. The user should know their smartphone number and have their phone with them.
+
+\subsection{Contraints}
+			\paragraph\indent
+C1.​ Mobile must be Android API 18 and above to support BLE\\
+
+C2.​ User must be in proximity\\
+
+C3.​ User must be using a Samsung Android Phone\\
+
+\section{Specific Requirements}
+		\paragraph\indent
+\subsection{External Interface Requirements}
+			\paragraph\indent
+\subsection{Functional Requirements}
+			\paragraph\indent
+R 1. The system must be installed on the user's phone.\\
+
+R 2. The system must open a boom gate.\\
+
+R 3. The system must connect to an Arivl box through BLE.\\
+
+		
+\end{document}
