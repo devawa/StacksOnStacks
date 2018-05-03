@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu May 03 20:59:59 CAT 2018
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\BrianKamau\\AndroidStudioProjects\\Arivl\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1
