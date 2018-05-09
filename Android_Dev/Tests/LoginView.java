@@ -1,13 +1,16 @@
-package com.example.ntikomathaba.arivllogindemo;
+package com.example.ntikomathaba.finallogin;
 
-interface LoginView {
-    String getUserName();
-    void showUsernameError(int resourceId);
+public interface LoginView {
 
-    String getPassword();
-    void showPasswordError(int resourceId);
+    String getPhonenumber();
+
+    void showPhonenumberError(int resourceID);
+
+    String getOTP();
+
+    void showOTPError(int resourceID);
 
     void startMainActivity();
 
-    void showLoginError(int resourceId);
+    void showLoginError(int resourceID);
 }
