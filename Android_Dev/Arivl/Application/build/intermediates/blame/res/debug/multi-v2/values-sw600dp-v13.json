@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "C:\\Users\\BrianKamau\\Documents\\University\\Third Year\\COS 301\\Arivl\\Android_App\\Arivl\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\BrianKamau\\Documents\\University\\Third Year\\COS 301\\Arivl\\Android_App\\Arivl\\Application\\src\\main\\res\\values-sw600dp\\template-dimens.xml",
+=======
             "outputFile": "C:\\Users\\BrianKamau\\AndroidStudioProjects\\Arivl\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\BrianKamau\\AndroidStudioProjects\\Arivl\\Application\\src\\main\\res\\values-sw600dp\\template-dimens.xml",
+>>>>>>> master
                     "from": {
                         "startLines": "20,21",
                         "startColumns": "4,4",
@@ -21,7 +28,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
+                    "source": "C:\\Users\\BrianKamau\\Documents\\University\\Third Year\\COS 301\\Arivl\\Android_App\\Arivl\\Application\\src\\main\\res\\values-sw600dp\\template-styles.xml",
+=======
                     "source": "C:\\Users\\BrianKamau\\AndroidStudioProjects\\Arivl\\Application\\src\\main\\res\\values-sw600dp\\template-styles.xml",
+>>>>>>> master
                     "from": {
                         "startLines": "18",
                         "startColumns": "4",

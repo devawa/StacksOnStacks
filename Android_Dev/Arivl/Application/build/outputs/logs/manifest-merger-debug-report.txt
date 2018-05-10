@@ -1,13 +1,24 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< HEAD
+ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:16:1-65:12
+INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:16:1-65:12
+INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:16:1-65:12
+INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:16:1-65:12
+=======
 ADDED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml:20:1-52:12
 INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml:20:1-52:12
 INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml:20:1-52:12
 INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml:20:1-52:12
+>>>>>>> master
 MERGED from [com.android.support:support-v13:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\130ebf1bc6260d8a62aff8b4c25bfac8\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\d711f54143a8738ae1e2ebd20acad763\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\e1d3df82996b0662b4dc67e3a8a5fdec\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\2706453352d1242c4e8cd648e0b783d0\AndroidManifest.xml:17:1-22:12
+<<<<<<< HEAD
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\b302315e2973938c9d8a1d22c5d11753\AndroidManifest.xml:2:1-11:12
+=======
+>>>>>>> master
 MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\d263ecf2d635961032ac83d1771cc632\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\ffa1c5ee643d43167680a977727893ab\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\3de33de2f8dd328b7547ee7574e83c57\AndroidManifest.xml:17:1-22:12
@@ -16,6 +27,89 @@ MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\BrianKamau\.gr
 MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\bac1c918700eadd04c936128e8aa64ae\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\72473518cbab3eab001bdaea2857f42e\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\feb6471df8c232080524a7d603360e67\AndroidManifest.xml:17:1-24:12
+<<<<<<< HEAD
+INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:16:1-65:12
+INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:16:1-65:12
+INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:16:1-65:12
+	package
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:17:5-40
+		INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:19:5-30
+		INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:16:11-69
+	android:versionCode
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:18:5-28
+		INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+uses-feature#android.hardware.bluetooth_le
+ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:30:5-32:35
+	android:required
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:32:9-32
+	android:name
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:31:9-53
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:34:5-68
+	android:name
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:34:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:35:5-74
+	android:name
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:35:22-71
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:36:5-81
+	android:name
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:36:22-78
+application
+ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:39:5-63:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\b302315e2973938c9d8a1d22c5d11753\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\b302315e2973938c9d8a1d22c5d11753\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:41:9-41
+	android:icon
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:40:9-42
+	android:theme
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:42:9-47
+activity#com.example.android.arivl.WelcomeActivity
+ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:43:9-50:20
+	android:theme
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:44:13-44
+	android:name
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:43:19-50
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:45:13-49:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:46:17-69
+	android:name
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:46:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:48:17-77
+	android:name
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:48:27-74
+activity#com.example.android.arivl.DeviceScanActivity
+ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:51:9-55:20
+	android:label
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:53:13-45
+	android:name
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:52:13-47
+activity#com.example.android.arivl.DeviceControlActivity
+ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:56:9-59
+	android:name
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:56:19-56
+service#com.example.android.arivl.BluetoothLeService
+ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:58:9-60:38
+	android:enabled
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:60:13-35
+	android:name
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml:59:13-47
+uses-sdk
+INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+=======
 INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml:20:1-52:12
 INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml:20:1-52:12
 INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml:20:1-52:12
@@ -89,6 +183,7 @@ uses-sdk
 INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml
 INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml
+>>>>>>> master
 MERGED from [com.android.support:support-v13:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\130ebf1bc6260d8a62aff8b4c25bfac8\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v13:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\130ebf1bc6260d8a62aff8b4c25bfac8\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\d711f54143a8738ae1e2ebd20acad763\AndroidManifest.xml:20:5-44
@@ -97,6 +192,11 @@ MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\BrianKamau\.gradle
 MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\e1d3df82996b0662b4dc67e3a8a5fdec\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\2706453352d1242c4e8cd648e0b783d0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\2706453352d1242c4e8cd648e0b783d0\AndroidManifest.xml:20:5-44
+<<<<<<< HEAD
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\b302315e2973938c9d8a1d22c5d11753\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\b302315e2973938c9d8a1d22c5d11753\AndroidManifest.xml:5:5-7:41
+=======
+>>>>>>> master
 MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\d263ecf2d635961032ac83d1771cc632\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\d263ecf2d635961032ac83d1771cc632\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\ffa1c5ee643d43167680a977727893ab\AndroidManifest.xml:20:5-44
@@ -113,6 +213,18 @@ MERGED from [com.android.support:support-compat:27.0.2] C:\Users\BrianKamau\.gra
 MERGED from [com.android.support:support-compat:27.0.2] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\72473518cbab3eab001bdaea2857f42e\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\feb6471df8c232080524a7d603360e67\AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\BrianKamau\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\feb6471df8c232080524a7d603360e67\AndroidManifest.xml:20:5-22:41
+<<<<<<< HEAD
+INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+		ADDED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\AndroidManifest.xml
+=======
 INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml
 INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -123,3 +235,4 @@ INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\ma
 		INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml
 		ADDED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\AndroidManifest.xml
+>>>>>>> master

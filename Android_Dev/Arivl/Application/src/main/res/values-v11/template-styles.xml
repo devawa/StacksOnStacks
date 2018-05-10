@@ -17,6 +17,10 @@
 <resources>
 
     <!-- Activity themes -->
+<<<<<<< HEAD
+    <style name="Theme.Base" parent="Theme.AppCompat.Light.NoActionBar" />
+=======
     <style name="Theme.Base" parent="android:Theme.Holo.Light" />
+>>>>>>> master
 
 </resources>

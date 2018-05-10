@@ -1,0 +1,4 @@
+#Wed May 09 17:47:12 CAT 2018
+base.0=C\:\\Users\\BrianKamau\\Documents\\University\\Third Year\\COS 301\\Arivl\\Android_App\\Arivl\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+path.0=classes.dex
+renamed.0=classes.dex
