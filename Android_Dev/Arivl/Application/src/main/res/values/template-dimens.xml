@@ -29,6 +29,7 @@
     <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
     <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
 
+<<<<<<< HEAD
     <dimen name="activity_horizontal_margin">16sp</dimen>
     <dimen name="activity_vertical_margin">16sp</dimen>
     <dimen name="fab_margin">16sp</dimen>
@@ -38,4 +39,6 @@
     <dimen name="slide_title">30sp</dimen>
     <dimen name="slide_desc">16sp</dimen>
     <dimen name="desc_padding">40sp</dimen>
+=======
+>>>>>>> master
 </resources>

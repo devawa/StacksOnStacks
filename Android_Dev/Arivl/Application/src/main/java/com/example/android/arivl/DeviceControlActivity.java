@@ -27,12 +27,18 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+<<<<<<< HEAD
 import android.support.v7.app.AppCompatActivity;
+=======
+>>>>>>> master
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.Button;
+=======
+>>>>>>> master
 import android.widget.ExpandableListView;
 import android.widget.SimpleExpandableListAdapter;
 import android.widget.TextView;
@@ -59,7 +65,10 @@ public class DeviceControlActivity extends Activity {
     private String mDeviceAddress;
     private ExpandableListView mGattServicesList;
     private BluetoothLeService mBluetoothLeService;
+<<<<<<< HEAD
     private Button mOpenButton;
+=======
+>>>>>>> master
     private ArrayList<ArrayList<BluetoothGattCharacteristic>> mGattCharacteristics =
             new ArrayList<ArrayList<BluetoothGattCharacteristic>>();
     private boolean mConnected = false;
@@ -68,9 +77,12 @@ public class DeviceControlActivity extends Activity {
     private final String LIST_NAME = "NAME";
     private final String LIST_UUID = "UUID";
 
+<<<<<<< HEAD
     private final String ARIVL_ACCESS_SERVICE = "0000ffe0-0000-1000-8000-00805f9b34fb";
     private final String ARIVL_ACCESS_CHARACTERISTIC = "0000ffe1-0000-1000-8000-00805f9b34fb";
 
+=======
+>>>>>>> master
     // Code to manage Service lifecycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
 
@@ -128,9 +140,12 @@ public class DeviceControlActivity extends Activity {
                 @Override
                 public boolean onChildClick(ExpandableListView parent, View v, int groupPosition,
                                             int childPosition, long id) {
+<<<<<<< HEAD
                     //TEST
 //                    System.out.println("THE GROUP POSITION IS : "+groupPosition);
 //                    System.out.println("THE CHILD POSITION IS : "+childPosition);
+=======
+>>>>>>> master
                     if (mGattCharacteristics != null) {
                         final BluetoothGattCharacteristic characteristic =
                                 mGattCharacteristics.get(groupPosition).get(childPosition);
@@ -156,6 +171,7 @@ public class DeviceControlActivity extends Activity {
                 }
     };
 
+<<<<<<< HEAD
     private final Button.OnClickListener openGate =
             new Button.OnClickListener(){
                 @Override
@@ -183,6 +199,8 @@ public class DeviceControlActivity extends Activity {
                 }
     };
 
+=======
+>>>>>>> master
     private void clearUI() {
         mGattServicesList.setAdapter((SimpleExpandableListAdapter) null);
         mDataField.setText(R.string.no_data);
@@ -198,16 +216,24 @@ public class DeviceControlActivity extends Activity {
         mDeviceAddress = intent.getStringExtra(EXTRAS_DEVICE_ADDRESS);
 
         // Sets up UI references.
+<<<<<<< HEAD
         // NOTE some of the component's visibility have been set to gone.
+=======
+>>>>>>> master
         ((TextView) findViewById(R.id.device_address)).setText(mDeviceAddress);
         mGattServicesList = (ExpandableListView) findViewById(R.id.gatt_services_list);
         mGattServicesList.setOnChildClickListener(servicesListClickListner);
         mConnectionState = (TextView) findViewById(R.id.connection_state);
         mDataField = (TextView) findViewById(R.id.data_value);
+<<<<<<< HEAD
         mOpenButton = (Button) findViewById(R.id.button_open);
         mOpenButton.setOnClickListener(openGate);
 
         getActionBar();
+=======
+
+        getActionBar().setTitle(mDeviceName);
+>>>>>>> master
         getActionBar().setDisplayHomeAsUpEnabled(true);
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
@@ -298,6 +324,7 @@ public class DeviceControlActivity extends Activity {
         for (BluetoothGattService gattService : gattServices) {
             HashMap<String, String> currentServiceData = new HashMap<String, String>();
             uuid = gattService.getUuid().toString();
+<<<<<<< HEAD
             //Test
             System.out.println("The UUID of the GATT Service is " + uuid);
             if (uuid.contentEquals(ARIVL_ACCESS_SERVICE)) {
@@ -325,6 +352,32 @@ public class DeviceControlActivity extends Activity {
                 mGattCharacteristics.add(charas);
                 gattCharacteristicData.add(gattCharacteristicGroupData);
             }
+=======
+            currentServiceData.put(
+                    LIST_NAME, SampleGattAttributes.lookup(uuid, unknownServiceString));
+            currentServiceData.put(LIST_UUID, uuid);
+            gattServiceData.add(currentServiceData);
+
+            ArrayList<HashMap<String, String>> gattCharacteristicGroupData =
+                    new ArrayList<HashMap<String, String>>();
+            List<BluetoothGattCharacteristic> gattCharacteristics =
+                    gattService.getCharacteristics();
+            ArrayList<BluetoothGattCharacteristic> charas =
+                    new ArrayList<BluetoothGattCharacteristic>();
+
+            // Loops through available Characteristics.
+            for (BluetoothGattCharacteristic gattCharacteristic : gattCharacteristics) {
+                charas.add(gattCharacteristic);
+                HashMap<String, String> currentCharaData = new HashMap<String, String>();
+                uuid = gattCharacteristic.getUuid().toString();
+                currentCharaData.put(
+                        LIST_NAME, SampleGattAttributes.lookup(uuid, unknownCharaString));
+                currentCharaData.put(LIST_UUID, uuid);
+                gattCharacteristicGroupData.add(currentCharaData);
+            }
+            mGattCharacteristics.add(charas);
+            gattCharacteristicData.add(gattCharacteristicGroupData);
+>>>>>>> master
         }
 
         SimpleExpandableListAdapter gattServiceAdapter = new SimpleExpandableListAdapter(

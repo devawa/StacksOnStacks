@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <array name="array_dot_active">
         <item>@color/dot_active_screen1</item>
         <item>@color/dot_active_screen2</item>
@@ -25,10 +26,13 @@
     <color name="dot_inactive_screen1">#0e1e49</color>
     <color name="dot_inactive_screen2">#0e1e49</color>
     <color name="dot_inactive_screen3">#0e1e49</color>
+=======
+>>>>>>> master
     <color name="notification_action_color_filter">@color/secondary_text_default_material_light</color>
     <dimen name="notification_content_margin_start">0dp</dimen>
     <dimen name="notification_main_column_padding_top">0dp</dimen>
     <dimen name="notification_media_narrow_margin">12dp</dimen>
+<<<<<<< HEAD
     <item name="phoneNumber_error" type="id"/>
     <style name="Arivl" parent="android:Theme.Holo.Light.DarkActionBar">
         <item name="colorPrimary">@color/color_dark</item>
@@ -63,6 +67,8 @@
         <item name="android:colorPrimaryDark">@color/color_dark</item>
         <item name="android:colorPrimary">@color/color_dark</item>
     </style>
+=======
+>>>>>>> master
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>
     <style name="Base.TextAppearance.AppCompat.Body2" parent="android:TextAppearance.Material.Body2"/>
@@ -125,7 +131,11 @@
     <style name="Base.Theme.AppCompat.Light.Dialog" parent="Base.V21.Theme.AppCompat.Light.Dialog"/>
     <style name="Base.ThemeOverlay.AppCompat.Dialog" parent="Base.V21.ThemeOverlay.AppCompat.Dialog"/>
     <style name="Base.V21.Theme.AppCompat" parent="Base.V7.Theme.AppCompat">
+<<<<<<< HEAD
         
+=======
+        <!-- Action Bar styling attributes -->
+>>>>>>> master
         <item name="actionBarSize">?android:attr/actionBarSize</item>
         <item name="actionBarDivider">?android:attr/actionBarDivider</item>
         <item name="actionBarItemBackground">@drawable/abc_action_bar_item_background_material</item>
@@ -135,12 +145,20 @@
         <item name="actionOverflowButtonStyle">?android:attr/actionOverflowButtonStyle</item>
         <item name="homeAsUpIndicator">?android:attr/homeAsUpIndicator</item>
 
+<<<<<<< HEAD
         
+=======
+        <!-- For PopupMenu -->
+>>>>>>> master
         <item name="listPreferredItemHeightSmall">?android:attr/listPreferredItemHeightSmall</item>
         <item name="textAppearanceLargePopupMenu">?android:attr/textAppearanceLargePopupMenu</item>
         <item name="textAppearanceSmallPopupMenu">?android:attr/textAppearanceSmallPopupMenu</item>
 
+<<<<<<< HEAD
         
+=======
+        <!-- General view attributes -->
+>>>>>>> master
         <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
         <item name="selectableItemBackgroundBorderless">?android:attr/selectableItemBackgroundBorderless</item>
         <item name="borderlessButtonStyle">?android:borderlessButtonStyle</item>
@@ -150,7 +168,11 @@
         <item name="editTextColor">?android:attr/editTextColor</item>
         <item name="listChoiceBackgroundIndicator">?android:attr/listChoiceBackgroundIndicator</item>
 
+<<<<<<< HEAD
         
+=======
+        <!-- Copy the platform default styles for the AppCompat widgets -->
+>>>>>>> master
         <item name="buttonStyle">?android:attr/buttonStyle</item>
         <item name="buttonStyleSmall">?android:attr/buttonStyleSmall</item>
         <item name="checkboxStyle">?android:attr/checkboxStyle</item>
@@ -159,7 +181,11 @@
         <item name="ratingBarStyle">?android:attr/ratingBarStyle</item>
         <item name="spinnerStyle">?android:attr/spinnerStyle</item>
 
+<<<<<<< HEAD
         
+=======
+        <!-- Copy our color theme attributes to the framework -->
+>>>>>>> master
         <item name="android:colorPrimary">?attr/colorPrimary</item>
         <item name="android:colorPrimaryDark">?attr/colorPrimaryDark</item>
         <item name="android:colorAccent">?attr/colorAccent</item>
@@ -172,7 +198,11 @@
         <item name="android:windowElevation">@dimen/abc_floating_window_z</item>
     </style>
     <style name="Base.V21.Theme.AppCompat.Light" parent="Base.V7.Theme.AppCompat.Light">
+<<<<<<< HEAD
         
+=======
+        <!-- Action Bar styling attributes -->
+>>>>>>> master
         <item name="actionBarSize">?android:attr/actionBarSize</item>
         <item name="actionBarDivider">?android:attr/actionBarDivider</item>
         <item name="actionBarItemBackground">@drawable/abc_action_bar_item_background_material</item>
@@ -182,12 +212,20 @@
         <item name="actionOverflowButtonStyle">?android:attr/actionOverflowButtonStyle</item>
         <item name="homeAsUpIndicator">?android:attr/homeAsUpIndicator</item>
 
+<<<<<<< HEAD
         
+=======
+        <!-- For PopupMenu -->
+>>>>>>> master
         <item name="listPreferredItemHeightSmall">?android:attr/listPreferredItemHeightSmall</item>
         <item name="textAppearanceLargePopupMenu">?android:attr/textAppearanceLargePopupMenu</item>
         <item name="textAppearanceSmallPopupMenu">?android:attr/textAppearanceSmallPopupMenu</item>
 
+<<<<<<< HEAD
         
+=======
+        <!-- General view attributes -->
+>>>>>>> master
         <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
         <item name="selectableItemBackgroundBorderless">?android:attr/selectableItemBackgroundBorderless</item>
         <item name="borderlessButtonStyle">?android:borderlessButtonStyle</item>
@@ -197,7 +235,11 @@
         <item name="editTextColor">?android:attr/editTextColor</item>
         <item name="listChoiceBackgroundIndicator">?android:attr/listChoiceBackgroundIndicator</item>
 
+<<<<<<< HEAD
         
+=======
+        <!-- Copy the platform default styles for the AppCompat widgets -->
+>>>>>>> master
         <item name="buttonStyle">?android:attr/buttonStyle</item>
         <item name="buttonStyleSmall">?android:attr/buttonStyleSmall</item>
         <item name="checkboxStyle">?android:attr/checkboxStyle</item>
@@ -206,7 +248,11 @@
         <item name="ratingBarStyle">?android:attr/ratingBarStyle</item>
         <item name="spinnerStyle">?android:attr/spinnerStyle</item>
 
+<<<<<<< HEAD
         
+=======
+        <!-- Copy our color theme attributes to the framework -->
+>>>>>>> master
         <item name="android:colorPrimary">?attr/colorPrimary</item>
         <item name="android:colorPrimaryDark">?attr/colorPrimaryDark</item>
         <item name="android:colorAccent">?attr/colorAccent</item>
@@ -285,7 +331,11 @@
     <style name="Platform.AppCompat" parent="Platform.V21.AppCompat"/>
     <style name="Platform.AppCompat.Light" parent="Platform.V21.AppCompat.Light"/>
     <style name="Platform.ThemeOverlay.AppCompat" parent="">
+<<<<<<< HEAD
         
+=======
+        <!-- Copy our color theme attributes to the framework -->
+>>>>>>> master
         <item name="android:colorPrimary">?attr/colorPrimary</item>
         <item name="android:colorPrimaryDark">?attr/colorPrimaryDark</item>
         <item name="android:colorAccent">?attr/colorAccent</item>
@@ -297,11 +347,19 @@
     <style name="Platform.ThemeOverlay.AppCompat.Dark"/>
     <style name="Platform.ThemeOverlay.AppCompat.Light"/>
     <style name="Platform.V21.AppCompat" parent="android:Theme.Material.NoActionBar">
+<<<<<<< HEAD
         
         <item name="android:textColorLink">?android:attr/colorAccent</item>
         <item name="android:textColorLinkInverse">?android:attr/colorAccent</item>
 
         
+=======
+        <!-- Update link colors pre-v23 -->
+        <item name="android:textColorLink">?android:attr/colorAccent</item>
+        <item name="android:textColorLinkInverse">?android:attr/colorAccent</item>
+
+        <!-- Update hint colors pre-v25 -->
+>>>>>>> master
         <item name="android:textColorHint">@color/abc_hint_foreground_material_dark</item>
         <item name="android:textColorHintInverse">@color/abc_hint_foreground_material_light</item>
 
@@ -309,11 +367,19 @@
         <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
     </style>
     <style name="Platform.V21.AppCompat.Light" parent="android:Theme.Material.Light.NoActionBar">
+<<<<<<< HEAD
         
         <item name="android:textColorLink">?android:attr/colorAccent</item>
         <item name="android:textColorLinkInverse">?android:attr/colorAccent</item>
 
         
+=======
+        <!-- Update link colors pre-v23 -->
+        <item name="android:textColorLink">?android:attr/colorAccent</item>
+        <item name="android:textColorLinkInverse">?android:attr/colorAccent</item>
+
+        <!-- Update hint colors pre-v25 -->
+>>>>>>> master
         <item name="android:textColorHint">@color/abc_hint_foreground_material_light</item>
         <item name="android:textColorHintInverse">@color/abc_hint_foreground_material_dark</item>
 
@@ -336,7 +402,11 @@
     <style name="TextAppearance.Compat.Notification.Title.Media">
         <item name="android:textColor">@color/primary_text_default_material_dark</item>
     </style>
+<<<<<<< HEAD
     <style name="Theme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+=======
+    <style name="Theme.Base" parent="android:Theme.Material.Light">
+>>>>>>> master
     </style>
     <style name="Widget.Compat.NotificationActionContainer" parent="">
         <item name="android:background">@drawable/notification_action_background</item>

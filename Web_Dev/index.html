@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+	
+	<head>
+		<title>Arival Admin Portal</title>
+		
+		<meta charset="UTF-8">
+		<meta name="description" content="Arival Admin Portal">
+		<meta name="keywords" content="Arival,Admin,Portal" >
+		<meta name="author" content="Linda Zwane" >
+		<!-- Change scale and resolution for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		
+		<script src="./JS/myscripts.js"></script>
+		<link rel="stylesheet" type="text/css" href="./CSS/styles.css">
+	</head>
+	<body>
+		<header>
+			<span class="header">
+				<h1 >Arivl</h1>
+			</span>
+			<span class="header">
+				<img id="logo" src="./images/logo.jpg" alt="logo" height="70" />
+			</span>
+		</header>
+			<form  method="post" action="validateLoggin.php">
+						<h1 style="border-bottom:3px solid #ffff1a">Admin Login</h1>
+
+			   <label  for="username"> Username</label>
+			    :<input  align="right" type="text" name="username" required autofocus><br><br>
+			    
+			    <label for="password"> Password</label>
+			    :<input align="right" type="password" name="password" required></span>
+			    <br><br>
+			    
+			    <input align="left" type="submit" name="login" value="Login"> 
+			</form>
+
+	</body>
+</html>

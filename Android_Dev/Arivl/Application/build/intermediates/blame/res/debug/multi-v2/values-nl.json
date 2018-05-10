@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\BrianKamau\\Documents\\University\\Third Year\\COS 301\\Arivl\\Android_App\\Arivl\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nl\\values-nl.xml",
+=======
+            "outputFile": "C:\\Users\\BrianKamau\\AndroidStudioProjects\\Arivl\\Application\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nl\\values-nl.xml",
+>>>>>>> master
             "map": [
                 {
                     "source": "C:\\Users\\BrianKamau\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\2706453352d1242c4e8cd648e0b783d0\\res\\values-nl\\values-nl.xml",
