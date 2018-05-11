@@ -130,7 +130,7 @@ public class WelcomeActivity extends Activity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(WelcomeActivity.this, DeviceScanActivity.class));
+        startActivity(new Intent(WelcomeActivity.this, check.class));
         finish();
     }
 
