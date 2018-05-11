@@ -19,24 +19,16 @@ package com.example.android.arivl;
 import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.Activity;
-<<<<<<< HEAD
-=======
 import android.app.ListActivity;
->>>>>>> master
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-<<<<<<< HEAD
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.ProgressBar;
-import android.widget.RelativeLayout;
-=======
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -44,58 +36,38 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
->>>>>>> master
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import java.util.ArrayList;
+import java.util.UUID;
 
 /**
  * Activity for scanning and displaying available Bluetooth LE devices.
  */
-<<<<<<< HEAD
-public class DeviceScanActivity extends Activity {
-//    private LeDeviceListAdapter mLeDeviceListAdapter;
-    private BluetoothAdapter mBluetoothAdapter;
-    private ArrayList<BluetoothDevice> mLeDevices;
-    private ProgressBar pBar;
-    private boolean found;
-    private boolean mScanning;
-    private Handler mHandler;
-    RelativeLayout myLayout = null;
-=======
 public class DeviceScanActivity extends ListActivity {
     private LeDeviceListAdapter mLeDeviceListAdapter;
     private BluetoothAdapter mBluetoothAdapter;
     private boolean mScanning;
     private Handler mHandler;
-
->>>>>>> master
+    private LayoutInflater mInflator;
     private static final int REQUEST_ENABLE_BT = 1;
     // Stops scanning after 10 seconds.
     private static final long SCAN_PERIOD = 5000;
     private static final int PERMISSION_REQUEST_COARSE_LOCATION = 1;
-<<<<<<< HEAD
-    private static final String ARIVLBOX_ADDRESS="5C:F8:21:F9:7C:93";
     private Context context;
-=======
->>>>>>> master
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
         getActionBar().setTitle(R.string.app_name);
         getActionBar().setLogo(R.mipmap.arivl_logo);
-        setContentView(R.layout.scan_devices);
-        mLeDevices = new ArrayList<BluetoothDevice>();
+//        mInflator = DeviceScanActivity.this.getLayoutInflater();
+//        View scan_view = mInflator.inflate(R.layout.scan_devices, null);
+//        setContentView(R.layout.scan_devices);
         mHandler = new Handler();
         context = getApplicationContext();
-=======
-        getActionBar().setTitle(R.string.title_devices);
-        mHandler = new Handler();
-
->>>>>>> master
         // Use this check to determine whether BLE is supported on the device.  Then you can
         // selectively disable BLE-related features.
         if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
@@ -103,12 +75,10 @@ public class DeviceScanActivity extends ListActivity {
             finish();
         }
         //Android devices with version api 23 and above require Location services permissions
-        grantLocationPermission();
-<<<<<<< HEAD
-        found = false;
-=======
 
->>>>>>> master
+        if (Build.VERSION.SDK_INT >= 21) {
+            grantLocationPermission();
+        }
         // Initializes a Bluetooth adapter.  For API level 18 and above, get a reference to
         // BluetoothAdapter through BluetoothManager.
         final BluetoothManager bluetoothManager =
@@ -121,19 +91,6 @@ public class DeviceScanActivity extends ListActivity {
             finish();
             return;
         }
-<<<<<<< HEAD
-//        pBar = new ProgressBar(DeviceScanActivity.this);
-//        myLayout = (RelativeLayout) findViewById(R.id.myLayout);
-//        pBar.setLayoutParams(new RelativeLayout.LayoutParams(
-//                RelativeLayout.LayoutParams.MATCH_PARENT,
-//                RelativeLayout.LayoutParams.MATCH_PARENT
-//        ));
-//        View view = getLayoutInflater().inflate(R.layout.scan_devices,null);
-//        setContentView(view);
-//        getLayoutInflater().createView().addView(R.layout.scan_devices);
-
-=======
->>>>>>> master
     }
 
     @TargetApi(23)
@@ -163,14 +120,8 @@ public class DeviceScanActivity extends ListActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_scan:
-<<<<<<< HEAD
-                mLeDevices.clear();
-                scanLeDevice(true);
-=======
                 mLeDeviceListAdapter.clear();
-//                scanLeDevice(true);
-                selectArivlBox();
->>>>>>> master
+                scanLeDevice(true);
                 break;
             case R.id.menu_stop:
                 scanLeDevice(false);
@@ -194,18 +145,12 @@ public class DeviceScanActivity extends ListActivity {
 
         //Go To device control activity
 
-<<<<<<< HEAD
-        // Initializes list view adapter.
-//        mLeDeviceListAdapter = new LeDeviceListAdapter();
-//        setListAdapter(mLeDeviceListAdapter);
-=======
 
         // Initializes list view adapter.
         mLeDeviceListAdapter = new LeDeviceListAdapter();
+
         setListAdapter(mLeDeviceListAdapter);
->>>>>>> master
         scanLeDevice(true);
-//        selectArivlBox();
     }
 
     @Override
@@ -222,35 +167,8 @@ public class DeviceScanActivity extends ListActivity {
     protected void onPause() {
         super.onPause();
         scanLeDevice(false);
-<<<<<<< HEAD
-//        mLeDeviceListAdapter.clear();
     }
 
-
-//    @Override
-//    protected void onListItemClick(ListView l, View v, int position, long id) {
-//        final BluetoothDevice device = mLeDeviceListAdapter.getDevice(position);
-//        if (device == null) return;
-//        final Intent intent = new Intent(this, DeviceControlActivity.class);
-//        intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_NAME, device.getName());
-//        intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_ADDRESS, device.getAddress());
-//        if (mScanning) {
-//            mBluetoothAdapter.stopLeScan(mLeScanCallback);
-//            mScanning = false;
-//        }
-//        startActivity(intent);
-//    }
-=======
-        mLeDeviceListAdapter.clear();
-    }
-
-    //Temp Method to select device and send it to the device control activity
-    protected void selectArivlBox(){
-//        if (device == null) return;
-        final Intent intent = new Intent(this, DeviceControlActivity.class);
-        intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_NAME, "5CF82187C7");
-        intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_ADDRESS, "5C:F8:21:87:C7:EF");
-    }
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
@@ -265,11 +183,15 @@ public class DeviceScanActivity extends ListActivity {
         }
         startActivity(intent);
     }
->>>>>>> master
 
     private void scanLeDevice(final boolean enable) {
-        if (enable) {
+
+        if(enable) {
             // Stops scanning after a pre-defined scan period.
+            Thread thread = new Thread();
+            thread.start();
+            UUID[] uuid = new UUID[1];
+            uuid[0] = UUID.fromString(SampleGattAttributes.ARIVL_BOX);
             mHandler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -278,13 +200,8 @@ public class DeviceScanActivity extends ListActivity {
                     invalidateOptionsMenu();
                 }
             }, SCAN_PERIOD);
-<<<<<<< HEAD
-=======
-
->>>>>>> master
             mScanning = true;
-//            mBluetoothAdapter.startDiscovery();
-            mBluetoothAdapter.startLeScan(mLeScanCallback);
+            mBluetoothAdapter.startLeScan(uuid, mLeScanCallback);
         } else {
             mScanning = false;
             mBluetoothAdapter.stopLeScan(mLeScanCallback);
@@ -293,86 +210,6 @@ public class DeviceScanActivity extends ListActivity {
     }
 
     // Adapter for holding devices found through scanning.
-<<<<<<< HEAD
-//    private class LeDeviceListAdapter extends BaseAdapter {
-//        private ArrayList<BluetoothDevice> mLeDevices;
-//        private LayoutInflater mInflator;
-//
-//        public LeDeviceListAdapter() {
-//            super();
-//            mLeDevices = new ArrayList<BluetoothDevice>();
-//            mInflator = DeviceScanActivity.this.getLayoutInflater();
-//        }
-//
-//        public void addDevice(BluetoothDevice device) {
-//            if(!mLeDevices.contains(device)) {
-//                if(device.getAddress().contentEquals(ARIVLBOX_ADDRESS)) {
-////                    System.out.println("ARIVLBOX FOUND");
-//                    mLeDevices.add(device);
-//                    Toast toast = Toast.makeText(context, "ArivlBox was found!", Toast.LENGTH_SHORT);
-//                    toast.show();
-//                }
-//            }
-//        }
-//
-////        public int findDevice(String mac){
-////            return 0;
-////        }
-//
-//        public BluetoothDevice getDevice(int position) {
-//            return mLeDevices.get(position);
-//        }
-//
-//        public void clear() {
-//            mLeDevices.clear();
-//        }
-//
-//        @Override
-//        public int getCount() {
-//            return mLeDevices.size();
-//        }
-//
-//        @Override
-//        public Object getItem(int i) {
-//            return mLeDevices.get(i);
-//        }
-//
-//        @Override
-//        public long getItemId(int i) {
-//            return i;
-//        }
-//
-//        @Override
-//        public View getView(int position, View convertView, ViewGroup parent) {
-//            return null;
-//        }
-////
-////        @Override
-////        public View getView(int i, View view, ViewGroup viewGroup) {
-////            ViewHolder viewHolder;
-////            // General ListView optimization code.
-////            if (view == null) {
-////                view = mInflator.inflate(R.layout.listitem_device, null);
-////
-////                viewHolder = new ViewHolder();
-////                viewHolder.deviceAddress = (TextView) view.findViewById(R.id.device_address);
-////                viewHolder.deviceName = (TextView) view.findViewById(R.id.device_name);
-////                view.setTag(viewHolder);
-////            } else {
-////                viewHolder = (ViewHolder) view.getTag();
-////            }
-////
-////            BluetoothDevice device = mLeDevices.get(i);
-////            final String deviceName = device.getName();
-////            if (deviceName != null && deviceName.length() > 0)
-////                viewHolder.deviceName.setText("ArivlBox");
-////            else
-////                viewHolder.deviceName.setText(R.string.unknown_device);
-////            viewHolder.deviceAddress.setText(device.getAddress());
-////            return view;
-////        }
-//    }
-=======
     private class LeDeviceListAdapter extends BaseAdapter {
         private ArrayList<BluetoothDevice> mLeDevices;
         private LayoutInflater mInflator;
@@ -385,13 +222,22 @@ public class DeviceScanActivity extends ListActivity {
 
         public void addDevice(BluetoothDevice device) {
             if(!mLeDevices.contains(device)) {
-                mLeDevices.add(device);
+                if(true){
+                    mLeDevices.add(device);
+                    final Intent intent = new Intent(getApplicationContext(),DeviceControlActivity.class);
+                    intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_NAME,device.getName());
+                    intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_ADDRESS,device.getAddress());
+                    if (mScanning) {
+                        mBluetoothAdapter.stopLeScan(mLeScanCallback);
+                        mScanning = false;
+                    }
+                    startActivity(intent);
+                    Toast toast = Toast.makeText(context, "ArivlBox was found!", Toast.LENGTH_SHORT);
+                    toast.show();
+                }
             }
         }
 
-//        public int findDevice(String mac){
-//            return 0;
-//        }
 
         public BluetoothDevice getDevice(int position) {
             return mLeDevices.get(position);
@@ -422,6 +268,7 @@ public class DeviceScanActivity extends ListActivity {
             // General ListView optimization code.
             if (view == null) {
                 view = mInflator.inflate(R.layout.listitem_device, null);
+
                 viewHolder = new ViewHolder();
                 viewHolder.deviceAddress = (TextView) view.findViewById(R.id.device_address);
                 viewHolder.deviceName = (TextView) view.findViewById(R.id.device_name);
@@ -433,77 +280,32 @@ public class DeviceScanActivity extends ListActivity {
             BluetoothDevice device = mLeDevices.get(i);
             final String deviceName = device.getName();
             if (deviceName != null && deviceName.length() > 0)
-                viewHolder.deviceName.setText(deviceName);
+                viewHolder.deviceName.setText("ArivlBox");
             else
                 viewHolder.deviceName.setText(R.string.unknown_device);
             viewHolder.deviceAddress.setText(device.getAddress());
-
             return view;
         }
     }
->>>>>>> master
 
     // Device scan callback.
     private BluetoothAdapter.LeScanCallback mLeScanCallback =
             new BluetoothAdapter.LeScanCallback() {
 
-        @Override
-        public void onLeScan(final BluetoothDevice device, int rssi, byte[] scanRecord) {
-            runOnUiThread(new Runnable() {
                 @Override
-                public void run() {
-<<<<<<< HEAD
-                    addDevice(device);
-=======
-                    mLeDeviceListAdapter.addDevice(device);
-                    mLeDeviceListAdapter.notifyDataSetChanged();
-                    if (device.getAddress()=="5C:F8:21:87:C7:EF"){
-                        System.out.println("Found ArivlBox");
+                public void onLeScan(final BluetoothDevice device, int rssi, final byte[] scanRecord) {
+                    if(rssi>-50){
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                mLeDeviceListAdapter.addDevice(device);
+                                mLeDeviceListAdapter.notifyDataSetChanged();
+                            }
+                        });
                     }
->>>>>>> master
                 }
-            });
-        }
-    };
+            };
 
-<<<<<<< HEAD
-    public void controlDevice(BluetoothDevice device){
-        if(found){
-            System.out.println("Found ArivlBox!");
-            final Intent intent = new Intent(DeviceScanActivity.this, DeviceControlActivity.class);
-            intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_NAME, device.getName());
-            intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_ADDRESS, device.getAddress());
-            if (mScanning) {
-                mBluetoothAdapter.stopLeScan(mLeScanCallback);
-                mScanning = false;
-            }
-            startActivity(intent);
-        }
-    }
-    public void addDevice(BluetoothDevice device){
-        if(!mLeDevices.contains(device)) {
-            if(device.getAddress().contentEquals(ARIVLBOX_ADDRESS)) {
-//                    System.out.println("ARIVLBOX FOUND");
-                mLeDevices.add(device);
-                Toast toast = Toast.makeText(context, "ArivlBox was found!", Toast.LENGTH_SHORT);
-                toast.show();
-                System.out.println("Found ArivlBox!");
-                final Intent intent = new Intent(DeviceScanActivity.this, DeviceControlActivity.class);
-                intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_NAME, device.getName());
-                intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_ADDRESS, device.getAddress());
-                if (mScanning) {
-                    mBluetoothAdapter.stopLeScan(mLeScanCallback);
-                    mScanning = false;
-                }
-                startActivity(intent);
-            }
-        }else{
-            System.out.println("Unable to find ArivlBox");
-        }
-    }
-
-=======
->>>>>>> master
     static class ViewHolder {
         TextView deviceName;
         TextView deviceAddress;
