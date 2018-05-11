@@ -12,7 +12,6 @@ We are a team of aspiring Software Engineers currently studying our final year a
 
 <html>
    <body>
-    <h1>Stacks On Stacks</h1>
         <nav>
             <a href="https://stacksonstacks301.slack.com/" target="_blank">Slack</a><br>
             <a href="https://github.com/devawa/StacksOnStacks" target="_blank">GitHub</a><br>
