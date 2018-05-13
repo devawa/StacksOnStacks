@@ -1,17 +1,8 @@
 /*
- * Copyright (C) 2013 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ Author: StacksOnStacks
+ Description: This class deals with the Bluetooth Low-energy functionality
+ Version number: 2.0
+ Module: ArivlApp
  */
 
 package com.example.android.arivl;
@@ -36,7 +27,7 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * Service for managing connection and data communication with a GATT server hosted on a
+ * Description: Service for managing connection and data communication with a GATT server hosted on a
  * given Bluetooth LE device.
  */
 public class BluetoothLeService extends Service {
@@ -67,8 +58,13 @@ public class BluetoothLeService extends Service {
     public final static UUID UUID_ARIVL =
             UUID.fromString(SampleGattAttributes.ARIVL_BOX);
 
-    // Implements callback methods for GATT events that the app cares about.  For example,
-    // connection change and services discovered.
+ 
+    
+/*
+Purpose: Implements callback methods for GATT events that the app cares about.  For example, connection change and services discovered.
+Parameter: BluetoothGatt gatt, int status and int newState
+Return: N/A
+*/
     private final BluetoothGattCallback mGattCallback = new BluetoothGattCallback() {
         @Override
         public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
@@ -90,6 +86,11 @@ public class BluetoothLeService extends Service {
             }
         }
 
+/*
+Purpose: When a Bluetooth service is detected
+Parameter: BluetoothGatt gatt & int status a
+Return: N/A
+*/
         @Override
         public void onServicesDiscovered(BluetoothGatt gatt, int status) {
             if (status == BluetoothGatt.GATT_SUCCESS) {
@@ -123,6 +124,11 @@ public class BluetoothLeService extends Service {
         return;
     }
 
+/*
+Purpose: The main functionality of this function is to send a signal to the ArivlBox to open the gate.
+Parameter: final String action &final BluetoothGattCharacteristic characteristic
+Return: N/A
+*/
     private void broadcastUpdate(final String action,
                                  final BluetoothGattCharacteristic characteristic) {
         final Intent intent = new Intent(action);
@@ -232,10 +238,11 @@ public class BluetoothLeService extends Service {
     }
 
     /**
-     * Disconnects an existing connection or cancel a pending connection. The disconnection result
-     * is reported asynchronously through the
-     * {@code BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt, int, int)}
+     * Purpose: Disconnects an existing connection or cancel a pending connection. The disconnection result
+     * is reported asynchronously through the BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt, int, int)}
      * callback.
+       Parameter: N/A
+       Return: N/A
      */
     public void disconnect() {
         if (mBluetoothAdapter == null || mBluetoothGatt == null) {
@@ -246,8 +253,10 @@ public class BluetoothLeService extends Service {
     }
 
     /**
-     * After using a given BLE device, the app must call this method to ensure resources are
+     * Purpose: After using a given BLE device, the app must call this method to ensure resources are
      * released properly.
+       Parameter: N/A
+       Return: N/A
      */
     public void close() {
         if (mBluetoothGatt == null) {
@@ -273,10 +282,9 @@ public class BluetoothLeService extends Service {
     }
 
     /**
-     * Enables or disables notification on a give characteristic.
-     *
-     * @param characteristic Characteristic to act on.
-     * @param enabled If true, enable notification.  False otherwise.
+     * Purpose:Enables or disables notification on a give characteristic.
+     * Parameter: BluetoothGattCharacteristic characteristic & boolean enabled( characteristic Characteristic to act on. enabled If true, enable notification.  False otherwise.
+       Return: N/A
      */
     public void setCharacteristicNotification(BluetoothGattCharacteristic characteristic,
                                               boolean enabled) {
@@ -286,7 +294,7 @@ public class BluetoothLeService extends Service {
         }
         mBluetoothGatt.setCharacteristicNotification(characteristic, enabled);
 
-        // This is specific to Heart Rate Measurement.
+        
         if (UUID_ARIVL.equals(characteristic.getUuid())) {
             BluetoothGattDescriptor descriptor = characteristic.getDescriptor(
                     UUID.fromString(SampleGattAttributes.ARIVL_CHAR));
@@ -296,10 +304,10 @@ public class BluetoothLeService extends Service {
     }
 
     /**
-     * Retrieves a list of supported GATT services on the connected device. This should be
+     * Purpose: Retrieves a list of supported GATT services on the connected device. This should be
      * invoked only after {@code BluetoothGatt#discoverServices()} completes successfully.
-     *
-     * @return A {@code List} of supported services.
+     * Parameter: N/A
+     * return: A {@code List} of supported services.
      */
     public List<BluetoothGattService> getSupportedGattServices() {
         if (mBluetoothGatt == null) return null;
