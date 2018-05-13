@@ -17,7 +17,7 @@ boolean NL = true; //new line variable
 
 /*
 Purpose: This initiates up the functioning of the ArivlBox module.
-Paraneter: N/A
+Parameter: N/A
 Return: N/A
 */
 void setup() 
@@ -37,7 +37,7 @@ void setup()
 
 /*
 Purpose: This function connects to the ArivlApp and sends a signal to open the gate.
-Paraneter: N/A
+Parameter: N/A
 Return: N/A
 */
 
