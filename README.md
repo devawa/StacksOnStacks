@@ -42,7 +42,7 @@ Team Member | Experience | Attitude |Interests | Skills
 <h1>Documentation</h1>
     <a href="https://github.com/devawa/StacksOnStacks/blob/master/Documentation/designDocument.pdf" target="_blank">1. Requirements and Design Document</a><br>
     <a href="https://github.com/devawa/StacksOnStacks/blob/master/Documentation/userManual.pdf" target="_blank">2. User Manual</a><br>
-    <a href="https://github.com/devawa/StacksOnStacks/blob/master/Documentation/codingStandards.docx" target="_blank">3. Coding Standards</a><br>
+    <a href="https://github.com/devawa/StacksOnStacks/blob/master/Documentation/codingStandards.pdf" target="_blank">3. Coding Standards</a><br>
     <a href="https://github.com/devawa/StacksOnStacks/blob/master/Documentation/TestingPolicyDocument.pdf" target="_blank">4. Testing Policy Document</a><br>
 
    </body>
