@@ -138,7 +138,7 @@ public class DeviceControlActivity extends Activity {
                 }
             };
 
- 
+
 
     private void clearUI() {
         mGattServicesList.setAdapter((SimpleExpandableListAdapter) null);

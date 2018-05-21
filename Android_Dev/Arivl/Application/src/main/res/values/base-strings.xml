@@ -16,21 +16,12 @@
 -->
 
 <resources>
-<<<<<<< HEAD
     <string name="app_name">Arivl</string>
-=======
-    <string name="app_name">BluetoothLeGatt</string>
->>>>>>> master
     <string name="intro_message">
         <![CDATA[
         
             
-<<<<<<< HEAD
             This sample demonstrates how the Arivl app would incorporate seamless access control functionality.
-=======
-            This sample demonstrates how to use the Bluetooth LE Generic Attribute Profile (GATT)
-            to transmit arbitrary data between devices.
->>>>>>> master
             
         
         ]]>

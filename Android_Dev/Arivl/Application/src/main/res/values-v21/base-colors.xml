@@ -16,7 +16,6 @@
 -->
 
 <resources>
-<<<<<<< HEAD
     <color name="color_dark">#122D49</color>
     <color name="color_accent">#52a4bc</color>
     <color name="color_background">#215670</color>
@@ -46,8 +45,4 @@
         <item>@color/dot_inactive_screen2</item>
         <item>@color/dot_inactive_screen3</item>
     </array>
-=======
-
-
->>>>>>> master
 </resources>
