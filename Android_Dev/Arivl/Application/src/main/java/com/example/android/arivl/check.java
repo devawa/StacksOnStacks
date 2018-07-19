@@ -72,7 +72,7 @@ public class check extends Activity {
                     }
                 }
             };
-            final String LoginURL = "http://192.168.43.136/ArivlApp/login.php";
+            final String LoginURL = "http://192.168.56.1:8080/ArivlApp/login.php";
             Login logInRequest = new Login(number,password,responseListener);
             RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
             queue.add(logInRequest);
@@ -102,6 +102,7 @@ public class check extends Activity {
                                 intent.putExtra("surname",surname);
                                 startActivity(intent);
                             }else{
+
                                 Toast.makeText(getApplicationContext(),"Log In Failed",Toast.LENGTH_SHORT).show();
                             }
                         }
@@ -111,7 +112,7 @@ public class check extends Activity {
                         }
                     }
                 };
-                final String LoginURL = "http://192.168.43.136/ArivlApp/login.php";
+                final String LoginURL = "http://192.168.43.234:8080/ArivlApp/login.php";
                 Login logInRequest = new Login(number,password,responseListener);
                 RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
                 queue.add(logInRequest);
