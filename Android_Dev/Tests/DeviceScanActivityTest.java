@@ -17,7 +17,7 @@ public class DeviceScanActivityTest {
       @Test public void isScanning_After_Creation_Should_Return_False() {
           BluetoothAdapter adapter = Mockito.mock(BluetoothAdapter.class);
           LeScanCallback callback = Mockito.mock(LeScanCallback.class);
-          com.example.android.arivl.DeviceScanActivity bleDevicesScanner = new com.example.android.arivl.DeviceScanActivity(adapter,callback);//(adapter, callback);
+          com.example.android.arivl.DeviceScanActivity bleDevicesScanner = new com.example.android.arivl.DeviceScanActivity(adapter,callback);
           Assert.assertFalse(bleDevicesScanner.isScanning());
       }
 
@@ -25,7 +25,7 @@ public class DeviceScanActivityTest {
           BluetoothAdapter adapter = Mockito.mock(BluetoothAdapter.class);
           LeScanCallback callback = Mockito.mock(LeScanCallback.class);
           Handler handler = Mockito.mock(Handler.class);
-          com.example.android.arivl.DeviceScanActivity bleDevicesScanner = new com.example.android.arivl.DeviceScanActivity(adapter,callback); //io.relayr.android.ble.BleDevicesScanner(adapter, callback);
+          com.example.android.arivl.DeviceScanActivity bleDevicesScanner = new com.example.android.arivl.DeviceScanActivity(adapter,callback);
           bleDevicesScanner.start(handler);
           Assert.assertTrue(bleDevicesScanner.isScanning());
       }
@@ -34,7 +34,7 @@ public class DeviceScanActivityTest {
           BluetoothAdapter adapter = Mockito.mock(BluetoothAdapter.class);
           LeScanCallback callback = Mockito.mock(LeScanCallback.class);
           Handler handler = Mockito.mock(Handler.class);
-          com.example.android.arivl.DeviceScanActivity bleDevicesScanner = new com.example.android.arivl.DeviceScanActivity(adapter,callback); ///io.relayr.android.ble.BleDevicesScanner(adapter, callback);
+          com.example.android.arivl.DeviceScanActivity bleDevicesScanner = new com.example.android.arivl.DeviceScanActivity(adapter,callback);
           bleDevicesScanner.start(handler);
           bleDevicesScanner.start(handler);
           Assert.assertTrue(bleDevicesScanner.isScanning());
@@ -44,7 +44,7 @@ public class DeviceScanActivityTest {
           BluetoothAdapter adapter = Mockito.mock(BluetoothAdapter.class);
           LeScanCallback callback = Mockito.mock(LeScanCallback.class);
           Handler handler = Mockito.mock(Handler.class);
-          com.example.android.arivl.DeviceScanActivity bleDevicesScanner = new com.example.android.arivl.DeviceScanActivity(adapter,callback); //io.relayr.android.ble.BleDevicesScanner(adapter, callback);
+          com.example.android.arivl.DeviceScanActivity bleDevicesScanner = new com.example.android.arivl.DeviceScanActivity(adapter,callback);
           bleDevicesScanner.start(handler);
           bleDevicesScanner.stop(handler);
           Assert.assertFalse(bleDevicesScanner.isScanning());
