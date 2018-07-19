@@ -57,8 +57,7 @@ public class DeviceScanActivityTest {
         com.example.android.arivl.DeviceScanActivity bleDevicesScanner = new com.example.android.arivl.DeviceScanActivity(adapter,callback);
         bleDevicesScanner.start(handler);
         Assert.assertTrue(bleDevicesScanner.isScanning());
-
         //timeout for Mockito in milliseconds
-        Mockito.verify(adapter, Mockito.timeout(2000).atLeastOnce()).stopLeScan(bleDevicesScanner.get());
+        Mockito.verify(adapter, Mockito.timeout(2000).atLeastOnce()).stopLeScan(bleDevicesScanner.get(adapter,handler));
     }
 }
