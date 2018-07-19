@@ -1,19 +1,8 @@
 <?php
 
-	$host="localhost";
-	$username="root";
-	$password="arival123";
-	// Create a new connection and select database
-	$connection=new mysqli($host, $username, $password);
-	// Check if connected
-	// Might fail if password is incorrect, server is unreachable, etc
-	if($connection->connect_error)
-	die("Connection failure: ".$connection->connect_error);
-	else
-	{
-	$connection->select_db("arivldb");
-	echo"Connection success";
-	}
+	include 'dbconfig.php';
+	
+
 	
 	function sanitise_input($data) {
 	$data = trim($data);
@@ -21,24 +10,21 @@
 	$data = htmlspecialchars($data);
 	return $data;
 	}
-    
+	 
+	//set parameters  and execute
 	$phone = sanitise_input($_POST['phone']);
-        $email= sanitise_input($_POST['email']);
+        $password= sanitise_input($_POST['password']);
 	$name = sanitise_input($_POST['name']);
         $surname = sanitise_input($_POST['surname']);
 	$resident = sanitise_input($_POST['resident']);
+	$active = 1;
+	$add->execute();
 	
-	
-	$query = "INSERT INTO users VALUES ('$phone', '$email', '$resident','$name', '$surname')";
-	$result = $connection->query($query);
+	$add->close();
+	$connection->close();
 
-	if($result)
-	{
-		echo "ADDED";
-		header("location:welcome.html");
 
-	}
-	
+	header('Location: welcome.html');
 	
         	
 ?>
