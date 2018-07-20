@@ -1,20 +1,6 @@
 <?php
-	$host="localhost";
-	$username="root";
-	$password="arival123";
-	// Create a new connection and select database
-	$connection=new mysqli($host, $username, $password);
-	// Check if connected
-	// Might fail if password is incorrect, server is unreachable, etc
-       if($connection->connect_error)
-	die("Connection failure: ".$connection->connect_error);
-	else
-	{
-	$connection->select_db("arivldb");
-	echo"Connection success";
-	echo "<br><br>";
+	include 'dbconfig.php';
 
-	}
 	
 	function sanitise_input($data) {
 	$data = trim($data);
@@ -24,19 +10,23 @@
 	}
 	$phone = sanitise_input($_POST['phone']);
 	$newphone = sanitise_input($_POST['newphone']);
-        $email= sanitise_input($_POST['email']);
-	$newemail= sanitise_input($_POST['newemail']);
+        $password= sanitise_input($_POST['password']);
+	$newpassword= sanitise_input($_POST['newpassword']);
     
 	if($phone != "Old Number" && $newphone != "New Number" ){
-	$query = "UPDATE users SET phone='$newphone' WHERE phone='$phone' ";
-	$result = $connection->query($query);
+	
+	$update1->execute();
+	$update1->close();
 	}
-	if($email != "Current" && $newemail != "New" ){
-	$query = "UPDATE users SET email='$newemail' WHERE email='$email' ";
-	$result = $connection->query($query);
+	if($password != "Current" && $newpassword != "New" ){
+	$update2->execute();
+	$update2->close();
 	}
 	
-	header("location:welcome.html");
-
+	
+	
+	
+	$connection->close();
+	header('Location: welcome.html');
 
 ?>
