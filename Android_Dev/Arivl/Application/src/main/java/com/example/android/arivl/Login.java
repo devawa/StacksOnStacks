@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Login extends StringRequest {
-    private static final String LoginURL  = "http://192.168.43.234:8080/ArivlApp/login.php";
+    private static final String LoginURL  = "http://192.168.43.251:8080/ArivlApp/login.php";
     private Map<String, String> params;
 
     /**
