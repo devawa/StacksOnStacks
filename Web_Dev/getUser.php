@@ -1,21 +1,5 @@
 <?php
-	function print(){
-	$host="localhost";
-	$username="root";
-	$password="arival123";
-	// Create a new connection and select database
-	$connection=new mysqli($host, $username, $password);
-	// Check if connected
-	// Might fail if password is incorrect, server is unreachable, etc
-	if($connection->connect_error)
-	die("Connection failure: ".$connection->connect_error);
-	else
-	{
-	$connection->select_db("arivldb");
-	echo"Connection success";
-	echo "<br><br>";
-
-	}
+	include 'dbconfig.php';
 	
 	function sanitise_input($data) {
 	$data = trim($data);
@@ -38,13 +22,22 @@
 			echo "<br><br>";
 			echo "Phone: ".$row["phone"];
 			echo "<br><br>";
-			echo "Email: ".$row["email"];
+			echo "password: ".$row["password"];
 			echo "<br><br>";
 			echo "Residentcy: ";
 			if($row["resident"] == 1){
 				echo "Permanent";
 			}else{
+			
 				echo "Guest";
+			}
+						echo "<br><br>";
+
+			echo "Stauts: ";
+			if($row["active"] == 1){
+				echo "active";
+			}else{
+				echo "deleted";
 			}
 			echo "<br><br>";
 			echo "<a href='welcome.html' >Back</a>";
@@ -52,7 +45,7 @@
 			
 		}
 	}
-	}
+	
 
 	
 	
