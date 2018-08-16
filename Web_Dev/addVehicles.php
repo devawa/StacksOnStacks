@@ -6,7 +6,7 @@
 	$id = $_SESSION['id'];
 
 	$sql1 = "select * from cars where registration = '$reg' ";
-	$res = $conn->Query($sql1);
+	$res = $conn->query($sql1);
 	if($row = $res->fetch_assoc()){
 		echo "Vehicle exists";
 	}
