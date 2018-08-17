@@ -1,0 +1,23 @@
+.background{
+	background-image: url("images/boom.jpg");
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a.nav-btn {
+	background: none;
+	color: #fff;
+	border-radius: 4px;
+}
+
+
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: yellowgreen !important;
+    will-change: left, right;
+}
