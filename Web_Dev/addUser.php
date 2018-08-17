@@ -1,30 +1,58 @@
 <?php
-
-	include 'dbconfig.php';
+	session_start();
+	include 'database.php';
+	$name= $_POST['name'];
+	$surname= $_POST['surname'];
+	$id= $_POST['id'];
+	$number= $_POST['number'];
+	$license = $_POST['license'];
+	$email =  $_POST['email'];
+	$password ;
+	$estate = $_POST['estate'];
 	
-
-	
-	function sanitise_input($data) {
-	$data = trim($data);
-	$data = stripslashes($data);
-	$data = htmlspecialchars($data);
-	return $data;
+	$alphabet = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
+	for ($i = 0; $i < 8; $i++) {
+        $n = rand(0, strlen($alphabet)-1);
+        $pass[$i] = $alphabet[$n];
 	}
-	 
-	//set parameters  and execute
-	$phone = sanitise_input($_POST['phone']);
-        $password= sanitise_input($_POST['password']);
-	$name = sanitise_input($_POST['name']);
-        $surname = sanitise_input($_POST['surname']);
-	$resident = sanitise_input($_POST['resident']);
-	$active = 1;
-	$add->execute();
+	$password=implode("",$pass);
 	
-	$add->close();
-	$connection->close();
-
-
-	header('Location: welcome.html');
 	
-        	
+	
+	
+	$query = "insert into users 
+				(name,surname,number,license,email,active,guestRequest,resident,loggedOn,password,deleted)
+				VALUES ('$name','$surname','$number','$license','$email',0,0,1,0,'$password',0)"; 
+	if($result = $conn->query($query))
+	{
+		echo "inside 1"; 
+		$sql = "SELECT * FROM users WHERE name = '$name' AND password= '$password' " ;
+		$result = $conn->query($sql);
+		if(!$row = $result->fetch_assoc())
+		{
+
+				echo ("Unable to Add user");
+				header("Location: homePage.php");
+		}else{
+			echo "inside 2 with user_id: ".$row['user_id']; 
+			$user_id = $row['user_id'];
+				$criteria = "Resident";
+				$query = "insert into privileges (user_id,criteria,estate,activeEstate) values ($user_id, '$criteria','$estate',1)";
+				if($result = $conn->query($query)){
+				echo "Added to privileges"; 
+				
+
+				$msg = " Dear ".$name." ".$surname." \n Password = ".$password." Username = ".$name." \n Estate = ".$estate;
+				$header = "From: Arivl";
+				mail($email,"Registation",$msg,$header);
+				
+				header("Location:homePage.php");
+			}else{
+				echo "didnt add";
+			}
+			}
+		}
+	else{
+		die ("something went wrong");
+	}
 ?>
