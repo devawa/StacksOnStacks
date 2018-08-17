@@ -48,10 +48,7 @@ public class BluetoothLeService extends Service {
     private BluetoothGatt mBluetoothGatt;
     private int mConnectionState = STATE_DISCONNECTED;
 
-<<<<<<< HEAD
     private String mTransMessage;
-=======
->>>>>>> master
     private static final int STATE_DISCONNECTED = 0;
     private static final int STATE_CONNECTING = 1;
     private static final int STATE_CONNECTED = 2;
@@ -108,6 +105,8 @@ public class BluetoothLeService extends Service {
                                          int status) {
             if (status == BluetoothGatt.GATT_SUCCESS) {
                 broadcastUpdate(ACTION_DATA_AVAILABLE, characteristic);
+                //delete upon reaction
+                mBluetoothGatt.disconnect();
             }
         }
 
@@ -121,62 +120,15 @@ public class BluetoothLeService extends Service {
     private void broadcastUpdate(final String action) {
         final Intent intent = new Intent(action);
         sendBroadcast(intent);
+        return;
     }
 
     private void broadcastUpdate(final String action,
                                  final BluetoothGattCharacteristic characteristic) {
         final Intent intent = new Intent(action);
-
-        // This is special handling for the Heart Rate Measurement profile.  Data parsing is
-        // carried out as per profile specifications:
-        // http://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.heart_rate_measurement.xml
-<<<<<<< HEAD
-        // For all other profiles, writes the data formatted in HEX.
+// writes the data formatted in HEX.
         final byte[] data = characteristic.getValue();
         String message = "o";
-        characteristic.setValue(String.valueOf(message));
-        mBluetoothGatt.writeCharacteristic(characteristic);
-=======
-       /** if (UUID_ARIVL.equals(characteristic.getUuid())) {
-            int flag = characteristic.getProperties();
-            int format = -1;
-            if ((flag & 0x01) != 0) {
-                format = BluetoothGattCharacteristic.FORMAT_UINT16;
-                Log.d(TAG, "Heart rate format UINT16.");
-            } else {
-                format = BluetoothGattCharacteristic.FORMAT_UINT8;
-                Log.d(TAG, "Heart rate format UINT8.");
-            }
-            final int heartRate = characteristic.getIntValue(format, 1);
-            Log.d(TAG, String.format("Received heart rate: %d", heartRate));
-            intent.putExtra(EXTRA_DATA, String.valueOf(heartRate));
-        } else {*/
-            // For all other profiles, writes the data formatted in HEX.
-            final byte[] data = characteristic.getValue();
-            String message = "o";
-            characteristic.setValue(String.valueOf(message));
-            mBluetoothGatt.writeCharacteristic(characteristic);
->>>>>>> master
-        if (data != null && data.length > 0) {
-                final StringBuilder stringBuilder = new StringBuilder(data.length);
-                for(byte byteChar : data)
-                    stringBuilder.append(String.format("%02X ", byteChar));
-                intent.putExtra(EXTRA_DATA, new String(data) + "\n" + stringBuilder.toString());
-            }
-        //}
-        sendBroadcast(intent);
-    }
-
-<<<<<<< HEAD
-    private void broadcastUpdate(final String action,
-                                 final BluetoothGattCharacteristic characteristic, String message) {
-        final Intent intent = new Intent(action);
-
-        // This is special handling for the Heart Rate Measurement profile.  Data parsing is
-        // carried out as per profile specifications:
-        // http://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.heart_rate_measurement.xml
-        // For all other profiles, writes the data formatted in HEX.
-        final byte[] data = characteristic.getValue();
         characteristic.setValue(String.valueOf(message));
         mBluetoothGatt.writeCharacteristic(characteristic);
         if (data != null && data.length > 0) {
@@ -187,9 +139,9 @@ public class BluetoothLeService extends Service {
         }
         //}
         sendBroadcast(intent);
+        //mBluetoothGatt.disconnect();
     }
-=======
->>>>>>> master
+
     public class LocalBinder extends Binder {
         BluetoothLeService getService() {
             return BluetoothLeService.this;
@@ -217,6 +169,13 @@ public class BluetoothLeService extends Service {
      *
      * @return Return true if the initialization is successful.
      */
+
+    public BluetoothLeService(){}
+    public BluetoothLeService(BluetoothAdapter adapter,BluetoothGatt gatt){
+        mBluetoothAdapter=adapter; mBluetoothDeviceAddress="Arivl";
+        mBluetoothGatt= gatt;
+    }
+    public BluetoothLeService(BluetoothManager manager){mBluetoothManager = manager;}
     public boolean initialize() {
         // For API level 18 and above, get a reference to BluetoothAdapter through
         // BluetoothManager.
@@ -237,6 +196,25 @@ public class BluetoothLeService extends Service {
         return true;
     }
 
+    public boolean initialize(Context context) {
+        // For API level 18 and above, get a reference to BluetoothAdapter through
+        // BluetoothManager.
+        if (mBluetoothManager == null) {
+            mBluetoothManager = (BluetoothManager) context.getSystemService(Context.BLUETOOTH_SERVICE);
+            if (mBluetoothManager == null) {
+                Log.e(TAG, "Unable to initialize BluetoothManager.");
+                return false;
+            }
+        }
+
+        mBluetoothAdapter = mBluetoothManager.getAdapter();
+        if (mBluetoothAdapter == null) {
+            Log.e(TAG, "Unable to obtain a BluetoothAdapter.");
+            return false;
+        }
+
+        return true;
+    }
     /**
      * Connects to the GATT server hosted on the Bluetooth LE device.
      *
@@ -353,5 +331,12 @@ public class BluetoothLeService extends Service {
         if (mBluetoothGatt == null) return null;
 
         return mBluetoothGatt.getServices();
+    }
+    
+     public static boolean isFailureStatus(int status) {
+        switch (status) {
+            case BluetoothGatt.GATT_SUCCESS:
+            default: return false;
+        }
     }
 }

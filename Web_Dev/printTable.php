@@ -1,7 +1,7 @@
 <?php
 	$host="localhost";
 	$username="root";
-	$password="arival123";
+	$password="";
 	// Create a new connection and select database
 	$connection=new mysqli($host, $username, $password);
 	// Check if connected
@@ -33,8 +33,9 @@
 		echo "<th style='border: 1px solid black;text-align:center'>Name</th>";
 		echo "<th style='border: 1px solid black;text-align:center'>Surname</th>";
 		echo "<th style='border: 1px solid black;text-align:center'>Phone</th>";
-		echo "<th style='border: 1px solid black;text-align:center'>Email</th>";
+		echo "<th style='border: 1px solid black;text-align:center'>password</th>";
 		echo "<th style='border: 1px solid black;text-align:center'>Residentcy</th>";
+		echo "<th style='border: 1px solid black;text-align:center'>Active</th>";
 		echo "</tr></thead>";
 
 		while($row=$result->fetch_assoc()){
@@ -42,14 +43,22 @@
 			echo "<td style='border: 1px solid black;text-align:center'>".$row["name"]."</td>";
 			echo "<td style='border: 1px solid black;text-align:center'>".$row["surname"]."</td>";
 			echo "<td style='border: 1px solid black;text-align:center'>".$row["phone"]."</td>";
-			echo "<td style='border: 1px solid black;text-align:center'>".$row["email"]."</td>";
+			echo "<td style='border: 1px solid black;text-align:center'>".$row["password"]."</td>";
 			echo "<td style='border: 1px solid black;text-align:center'>";
 			if($row["resident"] == 1){
 				echo "Permanent";
 			}else{
 				echo "Guest";
 			}
-			echo "</td><tr>";
+			echo "</td>";
+						echo "<td style='border: 1px solid black;text-align:center'>";
+			if($row["active"] == 1){
+				echo "Yes";
+			}else{
+				echo "No";
+			}
+			echo "</td></tr>";
+			
 			
 		}
 		echo "</table>";
