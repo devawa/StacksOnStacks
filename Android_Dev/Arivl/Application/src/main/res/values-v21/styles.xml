@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Arivl" parent="android:Theme.Holo.Light.DarkActionBar" >
+        <item name="colorPrimary">@color/color_dark</item>
+        <item name="colorPrimaryDark">@color/color_background</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:colorBackground">@color/color_background</item>
+    </style>
+
+    <style name="Arivl_Material" parent="android:Theme.Holo.Light.DarkActionBar" >
+        <item name="android:colorAccent">@color/color_accent</item>
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="android:colorPrimaryDark">@color/color_dark</item>
+        <item name="android:colorPrimary">@color/color_dark</item>
+
+    </style>
+
+    <style name="Arivl_Materials" parent="android:Theme.Holo.Light.DarkActionBar" >
+        <item name="android:colorAccent">@color/color_accent</item>
+        <item name="android:colorBackground">@color/color_background</item>
+        <item name="android:colorPrimaryDark">@color/color_dark</item>
+        <item name="android:colorPrimary">@color/color_dark</item>
+    </style>
+
+    <style name="Arivl_Dark" parent="android:Theme.Holo.Dialog">
+        <item name="android:colorPrimary">@color/color_dark</item>
+        <item name="android:colorPrimaryDark">@color/color_dark</item>
+        <item name="android:colorBackground">@color/color_background</item>
+    </style>
+
+    <style name="Arivl_Holo" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/color_dark</item>
+        <item name="android:colorPrimaryDark">@color/color_dark</item>
+        <item name="android:colorBackground">@color/color_accent</item>
+    </style>
+
+    <style name="Arivl_Holo_Dark" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:colorPrimaryDark">@color/color_dark</item>
+        <item name="android:colorBackground">@color/color_background</item>
+    </style>
+
+</resources>

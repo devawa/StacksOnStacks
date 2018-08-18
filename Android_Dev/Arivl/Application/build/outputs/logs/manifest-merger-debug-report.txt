@@ -1,0 +1,149 @@
+-- Merging decision tree log ---
+manifest
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:16:1-64:12
+INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml:16:1-64:12
+INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml:16:1-64:12
+INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml:16:1-64:12
+MERGED from [com.android.support:support-v13:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\493d6a3141a9bacc586739dae0048f9e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\de72241f9e9963eee8a217895747ebd2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\8ac4ff27b74c6d71613f070e2dd81651\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\ceb34574e87717532e4cac6d16bf3fc5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\e6ecd11ef59534e0fdd8cbc0cfee75d8\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\94dbd646037bd93db3c4bb9c89d9924c\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\e02a8a09b6836e89fdfd02f38cd6e53e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\7fd6bc802baf6d02bdfc037e663fa68f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\7770de38772420e0c39bce98b1d6084c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\1fd287e6cfa5f3f9a54d461601454063\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\0c8193a206a45dcc0ac698239d0ce728\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\c43ff52ed3fb301381a7e821dec25e10\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\d88addd5ab3fa52b270f89a940f54d2b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\41dcca025659da2971c924c398d258fb\AndroidManifest.xml:17:1-24:12
+INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml:16:1-64:12
+INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml:16:1-64:12
+INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml:16:1-64:12
+	package
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:17:5-40
+		INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml
+		INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:19:5-30
+		INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml
+		INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:16:11-69
+	android:versionCode
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:18:5-28
+		INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml
+		INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml
+uses-feature#android.hardware.bluetooth_le
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:30:5-32:35
+	android:required
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:32:9-32
+	android:name
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:31:9-53
+uses-permission#android.permission.BLUETOOTH
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:34:5-68
+	android:name
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:34:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:35:5-74
+	android:name
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:35:22-71
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:36:5-81
+	android:name
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:36:22-78
+uses-permission#android.permission.INTERNET
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:38:5-67
+	android:name
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:38:22-64
+application
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:39:5-62:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\e6ecd11ef59534e0fdd8cbc0cfee75d8\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\e6ecd11ef59534e0fdd8cbc0cfee75d8\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\94dbd646037bd93db3c4bb9c89d9924c\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\94dbd646037bd93db3c4bb9c89d9924c\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:41:9-41
+	android:icon
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:40:9-42
+	android:theme
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:42:9-47
+activity#com.example.android.arivl.WelcomeActivity
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:43:9-51:20
+	android:theme
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:45:13-44
+	android:name
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:44:13-44
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:46:13-50:29
+action#android.intent.action.MAIN
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:47:17-69
+	android:name
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:47:25-66
+category#android.intent.category.LAUNCHER
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:49:17-77
+	android:name
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:49:27-74
+activity#com.example.android.arivl.DeviceScanActivity
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:52:9-54:57
+	android:label
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:54:13-45
+	android:name
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:53:13-47
+activity#com.example.android.arivl.DeviceControlActivity
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:55:9-59
+	android:name
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:55:19-56
+service#com.example.android.arivl.BluetoothLeService
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:57:9-59:38
+	android:enabled
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:59:13-35
+	android:name
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:58:13-47
+activity#com.example.android.arivl.check
+ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:61:9-52
+	android:name
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml:61:19-40
+uses-sdk
+INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml
+INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml
+MERGED from [com.android.support:support-v13:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\493d6a3141a9bacc586739dae0048f9e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\493d6a3141a9bacc586739dae0048f9e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\de72241f9e9963eee8a217895747ebd2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\de72241f9e9963eee8a217895747ebd2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\8ac4ff27b74c6d71613f070e2dd81651\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\8ac4ff27b74c6d71613f070e2dd81651\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\ceb34574e87717532e4cac6d16bf3fc5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\ceb34574e87717532e4cac6d16bf3fc5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\e6ecd11ef59534e0fdd8cbc0cfee75d8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\e6ecd11ef59534e0fdd8cbc0cfee75d8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\94dbd646037bd93db3c4bb9c89d9924c\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\94dbd646037bd93db3c4bb9c89d9924c\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\e02a8a09b6836e89fdfd02f38cd6e53e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\e02a8a09b6836e89fdfd02f38cd6e53e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\7fd6bc802baf6d02bdfc037e663fa68f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\7fd6bc802baf6d02bdfc037e663fa68f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\7770de38772420e0c39bce98b1d6084c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\7770de38772420e0c39bce98b1d6084c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\1fd287e6cfa5f3f9a54d461601454063\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\1fd287e6cfa5f3f9a54d461601454063\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\0c8193a206a45dcc0ac698239d0ce728\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\0c8193a206a45dcc0ac698239d0ce728\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\c43ff52ed3fb301381a7e821dec25e10\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\c43ff52ed3fb301381a7e821dec25e10\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\d88addd5ab3fa52b270f89a940f54d2b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\d88addd5ab3fa52b270f89a940f54d2b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\41dcca025659da2971c924c398d258fb\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\abhinav\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\41dcca025659da2971c924c398d258fb\AndroidManifest.xml:20:5-22:41
+INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml
+INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml
+		INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml
+		ADDED from K:\Arivl\Application\src\main\AndroidManifest.xml
+		INJECTED from K:\Arivl\Application\src\main\AndroidManifest.xml

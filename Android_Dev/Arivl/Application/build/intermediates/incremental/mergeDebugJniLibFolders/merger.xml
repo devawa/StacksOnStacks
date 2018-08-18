@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<merger version="3"><dataSet config="main"><source path="C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\BrianKamau\Documents\University\Third Year\COS 301\Arivl\Android_App\Arivl\Application\src\debug\jniLibs"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\BrianKamau\AndroidStudioProjects\Arivl\Application\src\debug\jniLibs"/></dataSet></merger>
+>>>>>>> master
