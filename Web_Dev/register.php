@@ -34,7 +34,7 @@
 				<div class="panel-body">
 				<div class="row">
 				<div class="col-lg-12">
-	 				<form method="POST" action="addUser.php">
+	 				<form method="POST" action="registerUser.php">
 	 				<div class = "form-group">
 	 					<label for="name">
 	 						Name:
