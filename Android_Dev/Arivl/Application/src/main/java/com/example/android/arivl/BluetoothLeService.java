@@ -107,6 +107,7 @@ public class BluetoothLeService extends Service {
                 broadcastUpdate(ACTION_DATA_AVAILABLE, characteristic);
                 //delete upon reaction
                 mBluetoothGatt.disconnect();
+
             }
         }
 
@@ -331,12 +332,5 @@ public class BluetoothLeService extends Service {
         if (mBluetoothGatt == null) return null;
 
         return mBluetoothGatt.getServices();
-    }
-    
-     public static boolean isFailureStatus(int status) {
-        switch (status) {
-            case BluetoothGatt.GATT_SUCCESS:
-            default: return false;
-        }
     }
 }
