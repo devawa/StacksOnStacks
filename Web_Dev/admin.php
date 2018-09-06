@@ -5,17 +5,21 @@
  <!DOCTYPE html>
  <html>
  <head>
+
  	<title>Welcome <?php echo $_SESSION['name']; ?> | Admin Portal</title>
+=======
+
  	<meta charset = "utf-8">
 	<meta name = "viewport" content = "width = device-width, initial-scale=1.0">
 	<link rel = "stylesheet" type = "text/css" href = "homepage.css"></link>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src = "jquery-3.2.1.js"></script>
+	<script src = "./bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./bootstrap-3.3.4-dist/css/bootstrap.min.css"></link>
  </head>
-<body class="cyan darken-3">
-	<?php include "nav-bar-logout.php"; ?>
+ <body style="background-color: #cacecf;">
 	<div class="container">
 		<div class="row">
+
 			<div class="col s12 m12">
 				<h3 class="white-text">Hi <?php echo $_SESSION['name']; ?>, welcome to Arivl Admin Portal</h3>
 			</div>
@@ -129,6 +133,7 @@
 			</div>
 
 
+
 		</div>
 
 
@@ -136,6 +141,7 @@
 
 
 	</div>
+
 </body>
 
 
@@ -149,3 +155,4 @@
   });
 </script>
 </html>
+
