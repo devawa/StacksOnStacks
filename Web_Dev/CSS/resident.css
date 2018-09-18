@@ -1,0 +1,45 @@
+body{
+	background-image: url("images/es3.jpg");
+	/*height: 100vh;*/
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;*/
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+	background-size: cover;
+}
+h1{color:grey;}
+
+div.box{
+	background-color: lightgrey;
+    width: 300px;
+	padding: 25px;
+    margin: 25px;
+}
+
+p{
+	/*font-family: 'Poppins', serif;
+	font-family: 'Eczar', serif;*/
+	font-family: 'Metamorphous', serif;
+}
+
+a.nav-btn {
+	background: none;
+	color: #fff;
+	border-radius: 4px;
+}
+/*.carousel{
+	padding: 15px;
+    background: lightblue;
+ 
+	}*/
+
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: yellowgreen !important;
+    will-change: left, right;
+}

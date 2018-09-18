@@ -1,4 +1,4 @@
-header{
+/*header{
 	overflow: hidden;
 	background-color: #33ccff;
 	height: 70px;
@@ -18,8 +18,23 @@ header{
 	    margin: auto;
     width: 50%;
     border: 3px solid green;
+}*/
+body{
+	/*background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)),url("images/es4.jpg");*/
+	background-image:url("images/es1.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;*/
 }
-nav{
+
+label{
+	font-weight: bold;
+}
+
+/*nav{
 			overflow: hidden;
 
 		background-color: #ffffcc;
@@ -55,4 +70,4 @@ input{
 }
 body{
 	background-color:#00004d;
-}
+}*/

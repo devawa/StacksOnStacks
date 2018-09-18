@@ -1,0 +1,41 @@
+body{
+	background-image: url("images/es4.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
+h1{color:grey;}
+
+p{
+	font-family: 'Poppins', serif;
+}
+
+i{
+	 text-align: center;
+}
+
+.carousel-item{
+	background-color:white;
+}
+
+a.nav-btn {
+	background: none;
+	color: #fff;
+	border-radius: 4px;
+}
+/*.carousel{
+	padding: 15px;
+    background: lightblue;
+ 
+	}*/
+
+.tabs .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: yellowgreen !important;
+    will-change: left, right;
+}
