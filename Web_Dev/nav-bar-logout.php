@@ -1,7 +1,7 @@
 
 <nav class="cyan darken-4">
     <div class="nav-wrapper">
-      <a href="index.php" class="brand-logo">Arivl <span class="hide-on-small-only">Seamless Access Control<span></a>
+      <a href="index.php" class="brand-logo">Arivl <span class="hide-on-med-and-down">Seamless Access Control<span></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a class="waves-effect waves-light btn nav-btn" href="index.php">Home</a></li>

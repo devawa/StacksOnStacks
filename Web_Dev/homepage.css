@@ -1,5 +1,5 @@
 .background{
-	background-image: url("images/boom.jpg");
+	background-image: url("images/es.jpg");
 	height: 100vh;
 	background-attachment: fixed;
 	background-position: center;
@@ -13,6 +13,9 @@ a.nav-btn {
 	border-radius: 4px;
 }
 
+h4{
+	font-family: 'Roboto', serif;
+}
 
 .tabs .indicator {
     position: absolute;
