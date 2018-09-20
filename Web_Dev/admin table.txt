@@ -1,0 +1,52 @@
+		<div class="row">
+			<?php
+				$query = "SELECT * FROM users WHERE deleted = 0 AND active = 0";
+				$result = $conn->query($query);
+				if($result){
+					echo'<table class="striped highlight white-text">'; 
+					echo '<caption class="white-text flow-text">Users</caption>';
+					echo "<thead><tr>";
+					echo "<th>Name</th>";
+					echo "<th>Surname</th>";
+					echo "<th>Phone</th>";
+					echo "<th>Residency</th>";
+					echo "<th>Active</th>";
+					echo "</tr></thead>";
+
+					while($row=$result->fetch_assoc()){
+						echo "<form action = 'activateUser.php' method = 'POST'>";
+						echo "<tr>";
+						echo "<td>".$row["name"]."</td>";
+						echo "<td>".$row["surname"]."</td>";
+						echo "<td><input type = 'text' name = 'number' value = '".$row['number']. "'></td>";
+						echo "<td>";
+						if($row["resident"] == 1){
+							echo "Permanent";
+						}else{
+							echo "Guest";
+						}
+						echo "</td>";
+						echo "<td>";
+						if($row["active"] == 0){
+							echo "<button type='submit'>No</button>";
+						}else{
+							echo "Yes";
+						}
+						echo "</td>";
+						echo"</tr>";
+						echo"</form>";
+
+						if(isset($_POST['$count'])){
+							$id=$row["name"];
+							echo "HEYY".$row["name"]. '   ';
+							$sql = "UPDATE users SET active = 0 WHERE name= '$id'";
+							$res = $conn->query($sql);
+							if($res == FALSE){
+								echo"No data selected";
+							}
+						}
+					}
+					echo "</table>";
+				}
+			?>
+		</div>
