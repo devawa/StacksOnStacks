@@ -1,24 +1,21 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Arivl Login</title>
-	<meta charset = "utf-8">
-	<meta name = "viewport" content = "width = device-width, initial-scale=1.0">
-	<meta name="author" content="StacksonStacks" >
-	<link rel = "stylesheet" type = "text/css" href = "homepage.css">
-	<!--link rel="stylesheet" href="./bootstrap-3.3.4-dist/css/bootstrap.min.css"></link-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="StacksonStacks">
+    <link rel="icon" href="images/logo.png">
+    <link rel = "stylesheet" type = "text/css" href = "homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<script src="https://cdn.firebase.com/libs/firebaseui/3.3.0/firebaseui.js"></script>
-	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.3.0/firebaseui.css" />
-	
-    
+    <title>Arivl | Sign up</title>
 </head>
-<body class="cyan darken-3">
-	<?php include "nav-bar.php";?>
+<body class=" cyan darken-3">
+<?php $page = 'index'; include "nav-bar.php" ?>
 	<div class="container ">
 		<div class="row">
 			<form action="loginPortal.php" method="POST" role="form" class="col s12 m6 card">
+				<h2 class="center">Sign Up</h2>
 				<div class="row">
 					<div class="input-field col s12 m8 offset-m2">
 						<input id="uname" name="uname" type="text" class="validate">
@@ -64,9 +61,21 @@
 			</form>
 		</div>
 	</div>
-
+<?php include "footer.php" ?>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.carousel').carousel();
 
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true
+        });
+
+
+        $('.slider').slider();
+
+    });
+</script>
 </body>
 </html>
