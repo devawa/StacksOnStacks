@@ -30,7 +30,7 @@
 				</label>
             </p>
             <p>
-				<a href="#">Forgot Password</a>
+				<a href="forgotPassword.php">Forgot Password</a>
 			</p>
       </div>
     </form>

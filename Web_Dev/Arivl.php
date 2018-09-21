@@ -30,8 +30,8 @@
 			<ul class="tabs z-depth-1 cyan darken-2">
 				<li class="tab col s3"><a class="active white-text" href="#test1">Register Estate</a></li>
 				<li class="tab col s3"><a  href="#test2" class="white-text">Remove Estate</a></li>
-				<li class="tab col s3"><a href="#test3" class="white-text">Add User</a></li>
-				<li class="tab col s3"><a href="#test4" class="white-text">Delete User</a></li>
+				<li class="tab col s3"><a href="#test3" class="white-text">Estate List</a></li>
+				<li class="tab col s3"><a href="#test4" class="white-text">Access Log</a></li>
 			</ul>
     	</div>
 		<div class="row">
@@ -123,13 +123,61 @@
 		
 		<div class="row">
 			<div id="test3" class="col s12">
+<div class="row center">
+							<?php
+			$query = "SELECT * FROM estates WHERE active = 1";
+		$result = $conn->query($query);
+					echo'<table class="table table-bordered"> <caption>Estates</caption>';
+			echo "<thead> <tr>";
+			echo "<th>Name</th>";
+			echo "<th>Address</th>";
+			echo "<th>Email</th>";
+			echo "</tr></thead>";
+		while($row=$result->fetch_assoc())
+		{	
 
+			
+		
+			echo "<tr>";
+			echo "<td>".$row["estate_name"]."</td>";
+			echo "<td>".$row["estate_address"]."</td>";
+			echo "<td>".$row["estate_email"]."</td>";
+			echo "<tr>";
+		}
+			echo "</table>";
+
+	?>
+						</div>
 			</div>
 		</div>
 		
 		<div class="row">
 			<div id="test4" class="col s12">
+<div class="row center">
+							<?php
+			$query = "SELECT * FROM history ";
+		$result = $conn->query($query);
+					echo'<table class="table table-bordered"> <caption>Estates</caption>';
+			echo "<thead> <tr>";
+			echo "<th>Name</th>";
+			echo "<th>Time</th>";
+			echo "</tr></thead>";
+			
+			
+		while($row=$result->fetch_assoc())
+		{	
 
+			
+		
+			echo "<tr>";
+			echo "<td>".$row["user_id"]."</td>";
+			echo "<td>".$row["access"]."</td>";
+			echo "<tr>";
+		}
+			echo "</table>";
+
+	?>
+						</div>
 			</div>
 		</div>
   </div>
