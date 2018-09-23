@@ -46,10 +46,20 @@
     <string name="otp_error" />
     <string name="login_failed" />
 
+    <!-- Color items -->
+    <color name="cyan_darken_3">#006064</color>
+    <color name="cyan_darken_4">#84ffff</color>
+    <color name="mwhite">#FFFFFF</color>
+    <color name="mblack">#000000</color>
+
     <!-- Menu items -->
     <string name="menu_connect">Connect</string>
     <string name="menu_disconnect">Disconnect</string>
     <string name="menu_scan">Scan</string>
     <string name="menu_stop">Stop</string>
     <string name="button_open">Open</string>
+    <string name="menu_info">Aboute</string>
+    <string name="button_help">Help</string>
+
+
 </resources>
