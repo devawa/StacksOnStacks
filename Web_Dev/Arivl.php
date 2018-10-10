@@ -18,7 +18,7 @@
 	<?php include "nav-bar-logout.php"; ?>
 <div class="container">
 	<div class="row">
-			
+			<h4>Welcome <?php echo $_SESSION['name'];?></h4>
 				<!--a href = "EstateReg.php" class="btn center white-text">Register Estate </a>
 				<a href="RemoveEstate.php" class="btn white-text">Remove Estate</a>
 				<a href="" class="btn white-text">Add User</a>
@@ -30,8 +30,8 @@
 			<ul class="tabs z-depth-1 cyan darken-2">
 				<li class="tab col s3"><a class="active white-text" href="#test1">Register Estate</a></li>
 				<li class="tab col s3"><a  href="#test2" class="white-text">Remove Estate</a></li>
-				<li class="tab col s3"><a href="#test3" class="white-text">Estate List</a></li>
-				<li class="tab col s3"><a href="#test4" class="white-text">Access Log</a></li>
+				<li class="tab col s3"><a href="#test3" class="white-text">Add User</a></li>
+				<!--li class="tab col s3"><a href="#test4" class="white-text">Delete User</a></li-->
 			</ul>
     	</div>
 		<div class="row">
@@ -123,63 +123,52 @@
 		
 		<div class="row">
 			<div id="test3" class="col s12">
-<div class="row center">
-							<?php
-			$query = "SELECT * FROM estates WHERE active = 1";
-		$result = $conn->query($query);
-					echo'<table class="table table-bordered"> <caption>Estates</caption>';
-			echo "<thead> <tr>";
-			echo "<th>Name</th>";
-			echo "<th>Address</th>";
-			echo "<th>Email</th>";
-			echo "</tr></thead>";
-		while($row=$result->fetch_assoc())
-		{	
-
+				<div class="row center">
+					<?php
+						
+						
+						$query = "SELECT * FROM estates WHERE active = 1";
+						$result = $conn->query($query);
+						
+						echo'<table class="table table-bordered"> <caption>Estates</caption>';
+						echo "<thead> <tr>";
+						echo "<th>Name</th>";
+						echo "<th>Address</th>";
+						echo "<th>Email</th>";
+						echo "<th>Number of Users</th>";
+						echo "</tr></thead>";
+					while($row=$result->fetch_assoc())
+					{	
+						echo "<tr>";
+						echo "<td>".$row["estate_name"]."</td>";
+						echo "<td>".$row["estate_address"]."</td>";
+						echo "<td>".$row["estate_email"]."</td>";
+						
+						//number of estates
+						$estate = $row["estate_name"];
+						$query1 = "SELECT COUNT(*) FROM privileges WHERE estate = '$estate'";
+						$result1 = $conn->query($query1);
+						echo "<td>";
+						if($row1 = mysqli_fetch_array($result1)){
+						echo "".$row1[0];}
+						echo "</td>";
+						echo "<tr>";
+						
+						
+					}
+					echo "</table>";
+					
 			
-		
-			echo "<tr>";
-			echo "<td>".$row["estate_name"]."</td>";
-			echo "<td>".$row["estate_address"]."</td>";
-			echo "<td>".$row["estate_email"]."</td>";
-			echo "<tr>";
-		}
-			echo "</table>";
-
-	?>
-						</div>
+				?>
+				
 			</div>
 		</div>
 		
-		<div class="row">
+		<!--div class="row">
 			<div id="test4" class="col s12">
-<div class="row center">
-							<?php
-			$query = "SELECT * FROM history ";
-		$result = $conn->query($query);
-					echo'<table class="table table-bordered"> <caption>Estates</caption>';
-			echo "<thead> <tr>";
-			echo "<th>Name</th>";
-			echo "<th>Time</th>";
-			echo "</tr></thead>";
-			
-			
-		while($row=$result->fetch_assoc())
-		{	
 
-			
-		
-			echo "<tr>";
-			echo "<td>".$row["user_id"]."</td>";
-			echo "<td>".$row["access"]."</td>";
-			echo "<tr>";
-		}
-			echo "</table>";
-
-	?>
-						</div>
 			</div>
-		</div>
+		</div-->
   </div>
 </div>
 

@@ -15,7 +15,7 @@
 		</div>
       </div>
       <div class="col s12 center">
-            <button type="submit" class ="btn">
+            <button type="submit" class ="btn loginButton">
 				Sign In
 		    </button>
       </div>
@@ -30,8 +30,9 @@
 				</label>
             </p>
             <p>
-				<a href="forgotPassword.php">Forgot Password</a>
+				<a href="#">Forgot Password</a>
 			</p>
       </div>
     </form>
+	<div class="alerts mt-3"></div>
 </div> 

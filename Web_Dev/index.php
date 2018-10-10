@@ -11,7 +11,8 @@
     <title>Arivl | Home</title>
 </head>
 <body class=" cyan darken-3">
-<?php $page = 'index'; include "nav-bar.php" ?>
+<?php $page = 'index'; include "nav-bar.php"
+?>
 
 <div class="container">
     <!--div class="row">

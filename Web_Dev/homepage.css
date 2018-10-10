@@ -14,6 +14,13 @@ body {
       background-color: rgb(25, 25, 25);
 }*/
 
+#img{
+	width: 200px;
+	height: 200px;
+}
+h4{color:black;}
+p{color:black;}
+
 .about {
 	margin-top: 6rem;
 }
