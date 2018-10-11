@@ -176,8 +176,49 @@ INSERT INTO `users` (`user_id`, `name`, `surname`, `number`, `idNumber`, `licens
 (65, 'Ian', 'Matthews', '0879652178', '9611227894235', 'COS212GP', 'tyler@gmail.com', 0, 1, 0, 0, 'temp', 0);
 
 --
+-- Table structure for table `gallery`
+--
+
+CREATE TABLE `gallery` (
+  `image_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `filename` varchar(50) NOT NULL,
+  `type` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `gallery`
+--
+
+INSERT INTO `gallery` (`image_id`, `user_id`, `filename`, `type`) VALUES
+(6, 62, 'profile_user.jpg', 'image');
+
+--
 -- Indexes for dumped tables
 --
+
+CREATE TABLE `history` (
+  `_id` int(11) NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `access` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `history`
+--
+
+INSERT INTO `history` (`_id`, `user_id`, `access`) VALUES
+(1, 6, '2018-09-20 18:18:08'),
+(2, 6, '2018-10-11 15:13:17'),
+(3, 6, '2018-10-11 15:13:20'),
+(4, 6, '2018-10-11 15:13:23'),
+(5, 6, '2018-10-11 15:16:28'),
+(6, 6, '2018-10-11 15:16:30'),
+(7, 6, '2018-10-11 15:16:33'),
+(8, 6, '2018-10-11 15:17:45'),
+(9, 6, '2018-10-11 15:18:32'),
+(10, 6, '2018-10-11 15:18:35'),
+(11, 6, '2018-10-11 15:18:38');
 
 --
 -- Indexes for table `cars`
@@ -185,11 +226,6 @@ INSERT INTO `users` (`user_id`, `name`, `surname`, `number`, `idNumber`, `licens
 ALTER TABLE `cars`
   ADD KEY `user_id` (`user_id`);
 
---
--- Indexes for table `main`
---
-ALTER TABLE `main`
-  ADD PRIMARY KEY (`user_id`);
 
 --
 -- Indexes for table `privileges`
